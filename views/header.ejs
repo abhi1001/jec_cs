@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>JEC_CS</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/login.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Cabin+Sketch:700" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+  
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<div id="header">
+
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logo">
+				<span class="image avatar48">
+					<img src="images/jec.jpeg" alt="" />
+				</span>
+				<h1 id="title">JEC</h1>
+				<p>Computer Science Department</p>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+				<ul>
+					<li>
+						<a href="/index" id="top-link" class="skel-layers-ignoreHref">
+							<span class="icon fa-home">Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="/login" id="portfolio-link" class="skel-layers-ignoreHref">
+							<span class="icon fa-th">Login</span>
+						</a>
+					</li>
+					<li>
+						<a href="/aboutus" id="about-link" class="skel-layers-ignoreHref">
+							<span class="icon fa-user">About Us</span>
+						</a>
+					</li>
+					<li>
+						<a href="/contactus" id="contact-link" class="skel-layers-ignoreHref">
+							<span class="icon fa-envelope">Contact</span>
+						</a>
+					</li>
+					<li>
+						<a href="/academics">
+							<span class="icon fa-th">Academics</span>
+						</a>
+					</li>
+					<li>
+						<a href="/event">
+							<span class="icon fa-th">Events</span>
+						</a>
+					</li>
+					<% if(JWTData.userType!= 'guest') { %>
+						<li>
+							<a href="/logout">
+								<span class="icon fa-th">Logout</span>
+							</a>
+						</li>
+						<% } %>
+				</ul>
+			</nav>
+
+		</div>
+
+
+
+	</div>

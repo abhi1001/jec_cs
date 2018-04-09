@@ -1,0 +1,26 @@
+<%- include header.ejs %>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+        
+    <div id="index">
+        <input style="display:none;" id="user_name" value="<%= JWTData.firstName%>">
+        <div id="main_div"></div>
+        <div id="chat-area">
+            <h1 id="welcome_title">Hi
+                <%= JWTData.firstName %>! Welcome to the Chatroom</h1>
+            <div id="msg-container">
+                <ul id="messages"></ul>
+            </div>
+            <form role="form" class="form-inline" id="newMessageForm" action="">
+                <input class="form-control" placeholder="Type here..." id="newMessage" autocomplete="off" />
+                <button class="btn btn-success" type="submit" id="submitMessage">Send</button>
+            </form>
+        </div>
+    </div>
+    </body>
+
+    </html>

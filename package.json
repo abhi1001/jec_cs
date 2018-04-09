@@ -1,0 +1,25 @@
+{
+  "name": "jeccs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --debug index.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "^2.5.7",
+    "express": "~4.14.0",
+    "express-unless": "^0.5.0",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.13",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^2.1.0"
+  }
+}
